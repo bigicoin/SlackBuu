@@ -29,10 +29,10 @@ if (ENV == 'prod') {
 
 } else {
 
-	define('SLACK_APP_CLIENT_ID', '19040857907.19242118417');
-	define('SLACK_APP_CLIENT_SECRET', '0508ea1106a9a3bc49c35192c1c9c1ee');
+	define('SLACK_APP_CLIENT_ID', '123.456');
+	define('SLACK_APP_CLIENT_SECRET', 'abcdef123456');
 
 	define('HOST_PROTOCOL', 'http');
-	define('HOST_NAME', 'slacktest.agum.com');
+	define('HOST_NAME', 'dev.yourdomain.com');
 
 }
