@@ -2,6 +2,15 @@
 
 define('ENV', 'prod');
 
+$pid = pcntl_fork();
+if ($pid == 0) {
+	// child becomes the standalone detached process
+	posix_setsid();
+} else {
+	// parent exits
+	exit();
+}
+
 require_once(dirname(__FILE__).'/WebSocket/require.php');
 require_once(dirname(__FILE__).'/Config.php');
 require_once(dirname(__FILE__).'/SlackBotUser.php');

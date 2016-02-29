@@ -24,6 +24,7 @@ Requirements
 
 *	PHP 5.3 or above
 *	PHP [cURL library](http://php.net/manual/en/book.curl.php)
+*	PHP [POSIX library](http://php.net/manual/en/ref.posix.php) (php-posix or php-process)
 *	Apache web server (Optional, only if you want the OAuth integration)
 *	No other dependencies, so composer not required; since everything needed is included in the repo.
 
